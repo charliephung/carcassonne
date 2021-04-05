@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ReasonReact Examples</title>
+  </head>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <div id="root"></div>
+    <canvas id="canvas"></canvas>
+
+    <script>
+      window.process = {
+        env: {
+          NODE_ENV: "development",
+        },
+      };
+    </script>
+  </body>
+</html>
