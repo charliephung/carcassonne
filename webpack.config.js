@@ -15,6 +15,9 @@ module.exports = {
         test: /\.css$/i,
         use: [
           {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
             loader: "css-loader",
           },
         ],
@@ -35,6 +38,12 @@ module.exports = {
     port: 9000,
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      attributes: {
+        id: "target",
+        "data-target": "example",
+      },
+    }),
     new HtmlWebpackPlugin({
       template: "./index.html",
     }),

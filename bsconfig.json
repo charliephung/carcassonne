@@ -22,6 +22,7 @@
     "bs-webapi",
     "bs-css",
     "bs-css-emotion",
-    "bs-uuid"
+    "bs-uuid",
+    "re-classnames"
   ]
 }

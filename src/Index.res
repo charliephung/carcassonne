@@ -1,26 +1,20 @@
 open Webapi
 
-include Block
-include Matrix
-include Piece
-include Root
-include CanvasElement
-
 type assetUrl = {default: string}
 let churchImageUrl: assetUrl = %raw("require('./assets/church.png')")
 
-let root = Block.createBlock(~t=River, ~id="1")
-let block2 = Block.createBlock(~t=River, ~id="2")
-let block3 = Block.createBlock(~t=River, ~id="3")
-let block4 = Block.createBlock(~t=River, ~id="4")
-let block5 = Block.createBlock(~t=River, ~id="5")
-let block6 = Block.createBlock(~t=River, ~id="6")
-let block7 = Block.createBlock(~t=River, ~id="7")
-let block8 = Block.createBlock(~t=River, ~id="8")
-let block9 = Block.createBlock(~t=River, ~id="9")
-let block10 = Block.createBlock(~t=River, ~id="10")
+let root = Block.select(~t=River, ~id="1")
+let block2 = Block.select(~t=River, ~id="2")
+let block3 = Block.select(~t=River, ~id="3")
+let block4 = Block.select(~t=River, ~id="4")
+let block5 = Block.select(~t=River, ~id="5")
+let block6 = Block.select(~t=River, ~id="6")
+let block7 = Block.select(~t=River, ~id="7")
+let block8 = Block.select(~t=River, ~id="8")
+let block9 = Block.select(~t=River, ~id="9")
+let block10 = Block.select(~t=River, ~id="10")
 
-ReactDOMRe.renderToElementWithId(<App />, "root")
+ReactDOMRe.renderToElementWithId(<Root />, "root")
 
 // TESTING ON CANVAS
 
